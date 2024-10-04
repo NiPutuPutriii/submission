@@ -93,9 +93,8 @@ ax.set_title('Pengaruh Kondisi Cuaca terhadap Jumlah Penyewaan Sepeda')
 # Display the chart in Streamlit
 st.pyplot(fig)
 
-# Display the weather rental data as a table (optional)
-st.subheader('Total Penyewaan per Kondisi Cuaca')
-st.dataframe(weather_rentals_data.reset_index(name='Total Penyewaan'))
+
+
 
 
 # Create a title for another Streamlit app
@@ -123,10 +122,6 @@ plt.tight_layout()
 # Display the plot in Streamlit
 st.pyplot(fig)
 
-# Optional: Display the raw data as a table
-st.subheader('Data Rata-rata Penyewaan')
-st.dataframe(hourly_data2)
-
 
 # Create a title for another Streamlit app
 st.title('Total Penyewaan Sepeda Berdasarkan Musim dan Bulan')
@@ -144,6 +139,3 @@ plt.tight_layout()
 # Display the plot in Streamlit
 st.pyplot(plt)
 
-# Optional: Display the raw data as a table
-st.subheader('Data Penyewaan Berdasarkan Musim dan Bulan')
-st.dataframe(season_month_grouped_data)

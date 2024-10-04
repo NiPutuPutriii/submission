@@ -38,7 +38,7 @@ def create_season_month_grouped(df):
     return season_month_grouped
 
 # Load the dataset from a CSV file
-data_df = pd.read_csv("./main_data.csv")
+data_df = pd.read_csv('main_data.csv')
 
 # Create data for each analysis
 hourly_trends_2011_data = create_hourly_trends_2011(data_df)
